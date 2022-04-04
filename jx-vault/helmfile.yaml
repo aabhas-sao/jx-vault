@@ -1,0 +1,23 @@
+filepath: ""
+namespace: jx-vault
+repositories:
+- name: banzaicloud-stable
+  url: https://kubernetes-charts.banzaicloud.com
+- name: jx3
+  url: https://jenkins-x-charts.github.io/repo
+releases:
+- chart: banzaicloud-stable/vault-operator
+  name: vault-operator
+  version: 1.15.3
+  forceNamespace: ""
+  skipDeps: null
+  values:
+    - values.yaml
+- chart: jx3/vault-instance
+  name: vault-instance
+  version: 1.0.25
+  forceNamespace: ""
+  skipDeps: null
+templates: {}
+missingFileHandler: ""
+renderedvalues: {}

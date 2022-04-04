@@ -1,0 +1,122 @@
+- namespace: jx
+  path: helmfiles/jx/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: 1.1.59
+    description: A Helm chart for the resources for JX Boot
+    firstDeployed: "2022-04-02T13:33:16Z"
+    home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2022-04-02T13:33:16Z"
+    name: jxboot-helmfile-resources
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
+    version: 1.1.59
+  - apiVersion: v1
+    description: 'This chart installs the jx-preview CRD and garbagecollection job '
+    firstDeployed: "2022-04-02T13:33:21Z"
+    home: https://github.com/jenkins-x-plugins/jx-preview
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2022-04-02T13:33:21Z"
+    name: jx-preview
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    resourcePath: config-root/namespaces/jx/jx-preview
+    version: 0.0.198
+  - apiVersion: v1
+    description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
+    firstDeployed: "2022-04-02T13:33:27Z"
+    home: https://github.com/jenkins-x/lighthouse
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2022-04-02T13:33:27Z"
+    name: lighthouse
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    resourcePath: config-root/namespaces/jx/lighthouse
+    version: 1.5.13
+  - apiVersion: v2
+    appVersion: 0.3.15
+    description: Jenkins X next gen cloud CI / CD platform for Kubernetes
+    firstDeployed: "2022-04-02T13:33:31Z"
+    home: https://jenkins-x.io/
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2022-04-02T13:33:31Z"
+    maintainers:
+    - email: jenkins-x@googlegroups.com
+      name: Jenkins X Team
+    name: jx-build-controller
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    resourcePath: config-root/namespaces/jx/jx-build-controller
+    sources:
+    - https://github.com/jenkins-x-plugins/jx-build-controller
+    version: 0.3.15
+  - apiVersion: v1
+    appVersion: 1.8.0
+    description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
+      - and their logs.
+    firstDeployed: "2022-04-02T13:33:36Z"
+    home: https://github.com/jenkins-x/jx-pipelines-visualizer
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    lastDeployed: "2022-04-02T13:33:36Z"
+    name: jx-pipelines-visualizer
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    resourcePath: config-root/namespaces/jx/jx-pipelines-visualizer
+    sources:
+    - https://github.com/jenkins-x/jx-pipelines-visualizer
+    version: 1.8.0
+- namespace: secret-infra
+  path: helmfiles/secret-infra/helmfile.yaml
+  releases:
+  - apiVersion: v2
+    appVersion: 8.3.0
+    description: Kubernetes External Secrets CustomResourceDefinition
+    firstDeployed: "2022-04-02T13:33:51Z"
+    home: https://github.com/external-secrets/kubernetes-external-secrets
+    keywords:
+    - kubernetes-external-secrets
+    - secrets
+    lastDeployed: "2022-04-02T13:33:51Z"
+    maintainers:
+    - name: external-secrets
+      url: https://github.com/external-secrets
+    name: kubernetes-external-secrets
+    repositoryName: external-secrets
+    repositoryUrl: https://external-secrets.github.io/kubernetes-external-secrets
+    resourcePath: config-root/namespaces/secret-infra/kubernetes-external-secrets
+    sources:
+    - https://github.com/external-secrets/kubernetes-external-secrets
+    version: 8.3.0
+  - apiVersion: v1
+    appVersion: 0.4.21
+    description: wave chart that runs on kubernetes
+    firstDeployed: "2022-04-02T13:33:57Z"
+    home: https://github.com/pusher/wave
+    keywords:
+    - wave
+    - kubernetes
+    lastDeployed: "2022-04-02T13:33:57Z"
+    name: pusher-wave
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    resourcePath: config-root/namespaces/secret-infra/pusher-wave
+    sources:
+    - https://github.com/pusher/wave
+    version: 0.4.21
+- namespace: tekton-pipelines
+  path: helmfiles/tekton-pipelines/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: 0.27.2
+    description: A Helm chart for Tekton Pipelines
+    firstDeployed: "2022-04-02T13:34:07Z"
+    home: https://github.com/cdfoundation/tekton-helm-chart
+    icon: https://avatars2.githubusercontent.com/u/47602533
+    lastDeployed: "2022-04-02T13:34:07Z"
+    name: tekton-pipeline
+    repositoryName: cdf
+    repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
+    resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
+    version: 0.27.2

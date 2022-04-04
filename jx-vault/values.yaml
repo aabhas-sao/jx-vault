@@ -1,0 +1,4 @@
+storage:
+  inmem: {}
+dev:
+  enabled: true

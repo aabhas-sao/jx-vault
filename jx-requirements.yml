@@ -1,0 +1,38 @@
+apiVersion: core.jenkins-x.io/v4beta1
+kind: Requirements
+spec:
+  autoUpdate:
+    enabled: false
+    schedule: ""
+  cluster:
+    chartKind: pages
+    chartRepository: https://github.com/jenkins-x-bdd/repo.git
+    clusterName: kind
+    devEnvApprovers:
+    - todo
+    environmentGitOwner: todo
+    gitKind: github
+    gitName: github
+    gitServer: https://github.com
+    provider: kubernetes
+    registry: ghcr.io
+  environments:
+  - key: dev
+    owner: babadofar
+    repository: jx3-k3s-vault
+  - key: staging
+  ingress:
+    domain: ""
+    ignoreLoadBalancer: true
+    kind: ingress
+    namespaceSubDomain: .jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  pipelineUser:
+    username: babadofar
+  repository: bucketrepo
+  secretStorage: vault
+  vault: {}
+  webhook: lighthouse
